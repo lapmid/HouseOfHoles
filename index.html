@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>House Of Holes</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div id="front" class="contaioner-fluid">
+			<div id="header">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="responsive-nav">
+						<a class="navbar-brand" href="#"> <img src="img/Logos/house_of_holes_logo_tansparent.png" width="100" height="100"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon" ></span>
+						</button>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#front">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Aboutus">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Gallery">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Bookings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contactus">Contact</a>
+							</li>
+							
+						</ul>
+						
+					</div>
+				</nav>
+			</div>
+			
+			<div class="container text-center center-content">
+				<h1 class="blue-neon ">House Of Holes</h1>
+				<h3>Indore Gold Course</h3>
+				<button class="book-now"  >Book Now</button>
+			</div>
+			
+			<div class="fade-to-div">
+				<img src="img/Images/FadetoPhotoBG.png">
+			</div>
+		</div>
+		<div id="Aboutus" class="contaioner-fluid front-bottom" style="position: relative;">
+			<div class="contaioner section-2">
+				<div class="row">
+					<div class="col-6 text-center">
+						<img class="section-2-img" src="img/Images/ball.png" width="80%">
+					</div>
+					<div class="col-6">
+						<div class="about-us-right">
+							<h3 class="" style="font-family: Outrun-future-Bold;color: #95a7ff">About</h3>
+							<h2 class="red-neon">Lorem Ipsum</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div id="Gallery">
+				<div class="text-center" style="margin: 20px 21%">
+					<h1 class="blue-neon">Gallery</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+				</div>
+				<div class="contaioner-fluid slider-container">
+					<div class="container">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/Images/Slider1.png">
+							</div>
+							<div class="col-3">
+								<img src="img/Images/Slider2.png">
+							</div>
+							<div class="col-3">
+								<img src="img/Images/Slider3.png">
+							</div>
+							<div class="col-3" style="border: 6px solid #ff443c">
+								<img src="img/Images/Slider4.png">
+							</div>
+							
+						</div>
+					</div>
+					<div class="fade-to-div" style="">
+						<img src="img/Images/FadetoPhotoBG.png">
+					</div>
+				</div>
+
+				<div id="contactus" class="contaioner">
+					<div class="row inner-contactus">
+						<div class="footer-logo" >
+							<img src="img/Logos/Logo.png" >
+						</div>
+						<div class="">
+							<h2 class="green-neon">Location</h2>
+							<p>Babington Lane<br>Derby</p>
+						</div>
+						<div class="" >
+							<h2 class="green-neon">Email</h2>
+							<div style="display: flex;">
+								<img src="img/Images/mail.png">
+								<p>info@houseofholes.uk</p>
+							</div>
+						</div>
+						<div class="" >
+							<h2 class="green-neon">Follow</h2>
+							<img src="img/Images/fb-insta.png">
+						</div>
+						
+					</div>
+					<h4 class="yellow-neon text-center">All Rights Reserved By House Of Holes</h4>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$('.navbar-nav').on('click', 'li', function() {
+			$('.navbar-nav li.active').removeClass('active');
+			$(this).addClass('active');
+			});
+		</script>
+	</body>
+</html>

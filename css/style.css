@@ -1,0 +1,178 @@
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Montserrat-BlackItalic;
+  src: url(../fonts/Montserrat-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url(../fonts/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Outrun-future-Bold;
+  src: url(../fonts/Outrun-future-Bold.otf);
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+body{
+			background: url(../img/Images/BG.png) no-repeat;
+			background-size: cover;
+		}
+		#front{
+
+			background: url("../img/Images/front_background.png");
+			background-size: cover;
+			position: relative;
+			
+		}
+		#header{
+			position: fixed;
+		top: 0;
+		z-index: 100;
+		width: 100%;
+			
+		}
+		.navbar{
+			background-color: #080808e6;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		a,h1{
+			width: 100%;
+			font-family: Outrun-future-Bold;
+			color: #fff !important;
+			
+			text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000;
+			white-space: nowrap;
+		}
+		h3,p,h4{
+			width: 100%;
+			color: #fff;
+			font-family: Montserrat-Light;
+		}
+		.book-now{
+			font-family: Outrun-future-Bold;
+			background: url(../img/Images/Button.png) no-repeat;
+			background-size: 187px 59px;
+			border: none;
+			padding: 19px 50px;
+		}
+		.red-neon{
+			font-family: Outrun-future-Bold;
+			color: #fff !important;
+			
+			text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000;
+		}
+		.blue-neon{
+			font-family: Outrun-future-Bold;
+			color: #fff !important;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #737fb8, 0 0 30px #737fb8;
+		}
+		.green-neon{
+			font-family: Outrun-future-Bold;
+			color: #fff !important;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #15933e, 0 0 30px #15933e;
+		}
+		.yellow-neon{
+			font-family: Outrun-future-Bold;
+			color: #fff !important;
+			text-shadow:0 0 20px #582E0F, 0 0 25px #582E0F;
+		}
+		li:hover a{
+						color: #000 !important;
+		}
+		.active a{
+							color: #000 !important;
+		}
+		.navbar{
+			display: flex;
+			justify-content: space-between;
+		}
+		.navbar-collapse{
+			flex-direction: row-reverse;
+		}
+		.navbar-nav{
+			padding: 10px 110px;
+		}
+		li{
+			padding: 10px;
+		}
+		.center-content{
+			/*display: flex;
+			flex-direction: column;
+			justify-content: center;*/
+			padding: 18% 0;
+		}
+		.front-bottom{
+			background:  url(../img/Images/FadetoPhotoBG.png);
+			background-size: cover;
+			position: relative;
+			
+			z-index: 0;
+			width: 100%;
+			transform: translateY(-6.5em);
+		}
+		.front-bottom img{
+			width: 100%;
+			/*width: 100px;*/
+			/*height: 100px;*/
+		}
+		.section-2{
+			background: url(../img/Images/PhotoAboutus.png) no-repeat;
+			background-size: 80% 100%;
+			position: relative;
+			z-index: 2;
+		}
+		.section-2-img{
+			width: 90% !important;
+		height: 90% !important;
+		/* padding-top: 72%; */
+		
+		margin-left: 10%;
+		}
+		.col-3{
+			padding: 0;
+		}
+		.row{
+			margin: 0 !important;
+		}
+
+.fade-to-div{
+	max-height: 9em;overflow: hidden;position: absolute;bottom: 0;left: 0;transform: translateY(35px);
+}
+.fade-to-div img{
+	width: 100%;
+}
+.responsive-nav{
+	width: 100%; 
+	display: flex;
+	flex-direction: row;
+	 justify-content: space-between;
+}
+.about-us-right{
+	padding: 70% 20px;
+}
+.slider-container{
+	position: relative; background:url(../img/Images/Photo_2.png) no-repeat;background-position: 70% 20px;padding-bottom: 20%; 
+}
+#contactus{
+	background:url(../img/Images/FadetoPhotoBG.png) no-repeat;
+	background-size: cover; 
+}
+.inner-contactus{
+	display: flex;flex-direction: row;justify-content: space-between;padding: 45px 60px;
+}
+.footer-logo{
+	width: 20%;padding:20px;
+}

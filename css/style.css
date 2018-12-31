@@ -53,10 +53,10 @@ body{
 			font-family: Outrun-future-Bold;
 			color: #fff !important;
 			
-			text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000;
+			/* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000; */
 			white-space: nowrap;
 		}
-		h3,p,h4{
+		h3,p,h4,h5,h6{
 			width: 100%;
 			color: #fff;
 			font-family: Montserrat-Light;
@@ -68,26 +68,30 @@ body{
 			border: none;
 			padding: 19px 50px;
 		}
+		.book-now:hover{
+			transform: translateY(-2px);
+			transition: 0.5s;
+		}
 		.red-neon{
 			font-family: Outrun-future-Bold;
 			color: #fff !important;
 			
-			text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000;
+			text-shadow:0 0 15px #FF0000, 0 0 20px #FF0000;
 		}
 		.blue-neon{
 			font-family: Outrun-future-Bold;
 			color: #fff !important;
-				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #737fb8, 0 0 30px #737fb8;
+				text-shadow:  0 0 15px #737fb8, 0 0 20px #737fb8;
 		}
 		.green-neon{
 			font-family: Outrun-future-Bold;
 			color: #fff !important;
-				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #15933e, 0 0 30px #15933e;
+				text-shadow:  0 0 15px #15933e, 0 0 20px #15933e;
 		}
 		.yellow-neon{
 			font-family: Outrun-future-Bold;
 			color: #fff !important;
-			text-shadow:0 0 20px #582E0F, 0 0 25px #582E0F;
+			text-shadow:0 0 15px #582E0F, 0 0 20px #582E0F;
 		}
 		li:hover a{
 						color: #000 !important;
@@ -135,8 +139,8 @@ body{
 			z-index: 2;
 		}
 		.section-2-img{
-			width: 90% !important;
-		height: 90% !important;
+			width: 80% !important;
+		height: 95% !important;
 		/* padding-top: 72%; */
 		
 		margin-left: 10%;
@@ -161,18 +165,30 @@ body{
 	 justify-content: space-between;
 }
 .about-us-right{
-	padding: 70% 20px;
+	padding: 30% 20px;
 }
 .slider-container{
-	position: relative; background:url(../img/Images/Photo_2.png) no-repeat;background-position: 70% 20px;padding-bottom: 20%; 
+	position: relative; 
+	background:url(../img/Images/Photo_2.png) no-repeat;
+	background-position: 70% 20px;
+	padding-bottom: 30%; 
 }
 #contactus{
 	background:url(../img/Images/FadetoPhotoBG.png) no-repeat;
 	background-size: cover; 
 }
 .inner-contactus{
-	display: flex;flex-direction: row;justify-content: space-between;padding: 45px 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 60px 0px 25px;
 }
 .footer-logo{
-	width: 20%;padding:20px;
+	width: 200px;
+	padding:0 40px;
+}
+
+.slider-img:hover{
+	cursor: pointer;
+	border: 6px solid #ff443c;
 }

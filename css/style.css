@@ -24,9 +24,19 @@
   src: url(../fonts/Montserrat-Light.ttf);
 }
 
-body{
+body, html{
+    margin:0;
+	padding:0;
+	/* overflow-
+	x: hidden; */
+}
+
+html{
+	width: 100%;
+}
+		body{
 			background: url(../img/Images/BG.png) no-repeat;
-			background-size: cover;
+			width: 100%;
 		}
 		#front{
 
@@ -50,11 +60,11 @@ body{
 		}
 		a,h1{
 			width: 100%;
-			font-family: Outrun-future-Bold;
 			color: #fff !important;
-			
-			/* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF0000, 0 0 30px #FF0000; */
 			white-space: nowrap;
+		}
+		a:hover{
+			color: #fff;
 		}
 		h3,p,h4,h5,h6{
 			width: 100%;
@@ -65,6 +75,7 @@ body{
 			font-family: Outrun-future-Bold;
 			background: url(../img/Images/Button.png) no-repeat;
 			background-size: 187px 59px;
+			background-position: 50%;
 			border: none;
 			padding: 19px 50px;
 		}
@@ -113,10 +124,11 @@ body{
 			padding: 10px;
 		}
 		.center-content{
-			/*display: flex;
+			/* position: absolute; */
+			display: flex;
 			flex-direction: column;
-			justify-content: center;*/
-			padding: 18% 0;
+			justify-content: center;
+			padding: 10% 0;
 		}
 		.front-bottom{
 			background:  url(../img/Images/FadetoPhotoBG.png);
@@ -132,6 +144,7 @@ body{
 			/*width: 100px;*/
 			/*height: 100px;*/
 		}
+
 		.section-2{
 			background: url(../img/Images/PhotoAboutus.png) no-repeat;
 			background-size: 80% 100%;
@@ -178,17 +191,119 @@ body{
 	background-size: cover; 
 }
 .inner-contactus{
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0 60px 0px 25px;
+	/* padding: 0 60px 0px 25px; */
 }
-.footer-logo{
-	width: 200px;
-	padding:0 40px;
+.footer-logo img{
+	width: 6em !important;
 }
 
 .slider-img:hover{
 	cursor: pointer;
 	border: 6px solid #ff443c;
 }
+
+i{
+	color: #fff;
+	font-size: 2em;
+}
+footer li:hover a{
+	color: #fff !important;
+}
+.far{
+	vertical-align: middle;
+}
+
+footer ul li{
+	font-size: 15px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+	  font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+	.carousel-inner .next        { left:  33%; }
+	.carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		     { left: -25%; }
+  .carousel-col                { width: 25%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+	.active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+	width: 306px;
+	height: 230px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}

@@ -136,6 +136,9 @@ html{
 			justify-content: center;
 			padding: 10% 0;
 		}
+		.container-marquee{
+			margin: auto 8vw;
+		}
 		.front-bottom{
 			background:  url(../img/Images/FadetoPhotoBG.png);
 			background-size: cover;
@@ -162,7 +165,7 @@ html{
 		height: 95% !important;
 		/* padding-top: 72%; */
 		
-		margin-left: 10%;
+		margin-left: 6vw;
 		}
 		.col-3{
 			padding: 0;
@@ -203,8 +206,13 @@ html{
 	justify-content: space-between;
 	/* padding: 0 60px 0px 25px; */
 }
+#logo{
+	margin-left: 6vw;
+}
 .footer-logo img{
-	width: 6em !important;
+	width: 100px;
+	height: 100px;
+	margin-left: 5.6vw;
 }
 
 .slider-img:hover{
@@ -262,11 +270,20 @@ footer ul li{
 		height: 100px;
 	}
 
+	.footer-logo img{
+		width: 100px;
+		height: 100px;
+	}
+
 	
   }
 
   @media screen and (max-width: 900px) {
 	#logo{
+		width: 100px;
+		height: 100px;
+	}
+	.footer-logo img{
 		width: 100px;
 		height: 100px;
 	}
@@ -277,10 +294,18 @@ footer ul li{
 		width: 80px;
 		height: 80px;
 	}
+	.footer-logo img{
+		width: 80px;
+		height: 80px;
+	}
   }
 
   @media screen and (max-width: 800px) {
 	#logo{
+		width: 60px;
+		height: 60px;
+	}
+	.footer-logo img{
 		width: 60px;
 		height: 60px;
 	}

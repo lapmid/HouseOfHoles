@@ -264,6 +264,42 @@ footer ul li{
 	 text-align-last: center;
  }
 
+
+.hero-area{
+	position: relative; 
+	display: flex;
+	justify-content: center;
+	padding: 245px 150px;
+}
+
+.footer-nav{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row; 
+	justify-content: flex-end;
+}
+
+.footer-nav i{
+	font-size: 1em;
+}
+
+#image-lightbox .modal-body{
+	padding: 0;
+}
+
+#image-lightbox button.close{
+	position: absolute;
+    top: 0;
+    right: -30px;
+    color: #fff;
+    opacity: 1;
+}
+
+.lightbox-image{
+	cursor: pointer;
+}
+
+
 @media screen and (max-width: 992px) {
 	#logo{
 		width: 100px;
@@ -308,6 +344,17 @@ footer ul li{
 	.footer-logo img{
 		width: 60px;
 		height: 60px;
+	}
+	.about-us-right{
+		padding: 0% 20px 30% 20px
+	}
+
+	.hero-area{
+		padding: 245px 15px;
+	}
+
+	.footer-nav{
+		padding-left: 0;
 	}
   }
 

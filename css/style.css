@@ -161,7 +161,7 @@ html{
 			z-index: 2;
 		}
 		.section-2-img{
-			width: 80% !important;
+		width: 83% !important;
 		height: 95% !important;
 		/* padding-top: 72%; */
 		
@@ -364,5 +364,15 @@ footer ul li{
 	}
 	.bottom-follow{
 		text-align-last: start;
+	}
+  }
+
+  @media screen and (min-width: 767px) {
+	.carousel-control-next{
+		right: -5em
+	}
+
+	.carousel-control-prev{
+		left: -5em;
 	}
   }

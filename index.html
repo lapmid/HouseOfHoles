@@ -132,11 +132,11 @@
 			</div>
 			<footer id="contactus" class="container-fluid" style="position: relative;z-index: 10;">
 				<div class="row inner-contactus">
-					<div class="col-4 footer-logo">
+					<div class="col-md-4 footer-logo">
 
-						<img class="img-responsive img-fluid" src="img/Logos/Logo.png" width="6em" style="margin-left:8vw;">
+						<img class="img-responsive img-fluid" src="img/Logos/Logo.png" width="6em">
 					</div>
-					<div class="col-8 container-fluid ">
+					<div class="col-md-8 container-fluid ">
 						<ul class="row footer-nav" >
 							<li class="col-sm-4">
 								<span class="green-neon">Location</span>
@@ -149,7 +149,7 @@
 							<li class="col-sm-4 bottom-follow">
 								<span class="green-neon">Follow</span>
 								<br>
-								<span style="margin-left: -1.5em;"><i class="fab fa-facebook-f"></i> &nbsp;
+								<span class="social-link-wrapper"><i class="fab fa-facebook-f"></i> &nbsp;
 								<i class="fab fa-instagram"></i></span>
 							</li>
 						</ul>
@@ -163,6 +163,19 @@
 			</footer>
 		</div>
 	</div>
+	
+	<div class="modal" tabindex="-1" role="dialog" id="image-lightbox">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <img src="" id="image" class="img-fluid w-100 d-block" />
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -174,6 +187,23 @@
 			$(this).addClass('active');
 		});
 
+		var $imageSrc;  
+		$('.lightbox-image').click(function() {
+		    $imageSrc = $(this).data('image');
+		});
+ 		// when the modal is opened autoplay it  
+		$('#image-lightbox').on('shown.bs.modal', function (e) {
+		    
+		// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+ 		$("#image-lightbox #image").attr('src', $imageSrc  ); 
+		})
+		  
+		  
+		// reset the modal image
+		$('#image-lightbox').on('hide.bs.modal', function (e) {
+		    // a poor man's stop video
+		    $("#image-lightbox #image").attr('src',''); 
+		}) 
 		
 	</script>
 </body>

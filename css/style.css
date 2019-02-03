@@ -146,8 +146,8 @@ html{
 			
 			z-index: 0;
 			width: 100%;
-			transform: translateY(-6.5em);
-		}
+/*			transform: translateY(-6.5em);
+*/		}
 		.front-bottom img{
 			width: 100%;
 			/*width: 100px;*/
@@ -213,6 +213,10 @@ html{
 	width: 100px;
 	height: 100px;
 	margin-left: 5.6vw;
+}
+
+.social-link-wrapper{
+	margin-left: -1.5em;
 }
 
 .slider-img:hover{
@@ -311,19 +315,11 @@ footer ul li{
 		height: 100px;
 	}
 
-	
+	.container-marquee{
+		margin : 0;
+	}
   }
 
-  @media screen and (max-width: 900px) {
-	#logo{
-		width: 100px;
-		height: 100px;
-	}
-	.footer-logo img{
-		width: 100px;
-		height: 100px;
-	}
-  }
 
   @media screen and (max-width: 850px) {
 	#logo{
@@ -365,6 +361,14 @@ footer ul li{
 	.bottom-follow{
 		text-align-last: start;
 	}
+
+	.footer-logo img{
+		margin-left: 3vw
+	}
+
+	.social-link-wrapper{
+		margin-left:0;
+	}
   }
 
   @media screen and (min-width: 767px) {
@@ -375,4 +379,5 @@ footer ul li{
 	.carousel-control-prev{
 		left: -5em;
 	}
+
   }
